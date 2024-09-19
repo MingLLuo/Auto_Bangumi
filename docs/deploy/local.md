@@ -29,12 +29,24 @@ cd AutoBangumi
 ```bash
 cd src
 python3 -m venv env
-python3 pip install -r requirements.txt
+
+# 激活虚拟环境
+# 如果需要退出虚拟环境，可以使用 `deactivate` 命令
+# 对于 Linux 和 macOS:
+source env/bin/activate
+
+# 对于 Windows:
+# env\Scripts\activate
+
+# 使用 pip 安装项目依赖
+# python3 -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## 创建配置和数据文件夹
 
 ```bash
+# 返回到 backend 目录
 mkdir config
 mkdir data
 ```
